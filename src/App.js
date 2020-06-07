@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Hello from './hello';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App({name, age , image}) {
+  return <div>
+    Hello React World From = {name} age = {age + 2} , added 2 in age <br/><br/> <img src={image} alt="nature"/>.
+    <br/>
+    <Hello firstName={name} ></Hello>
+
+  </div>
+   
+  
 }
 
 export default App;
